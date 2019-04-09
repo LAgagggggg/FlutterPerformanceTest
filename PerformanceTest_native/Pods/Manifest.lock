@@ -1,0 +1,20 @@
+PODS:
+  - KMCGeigerCounter (0.3.0)
+  - Masonry (1.0.2)
+
+DEPENDENCIES:
+  - KMCGeigerCounter (~> 0.3.0)
+  - Masonry (~> 1.0.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KMCGeigerCounter
+    - Masonry
+
+SPEC CHECKSUMS:
+  KMCGeigerCounter: a06cfeed4a96e8f9a49028abb3ba7e53604d3219
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+
+PODFILE CHECKSUM: 61973796ecdf69944134c37c957a6ec78cd3d846
+
+COCOAPODS: 1.5.2
