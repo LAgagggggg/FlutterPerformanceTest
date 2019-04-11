@@ -8,7 +8,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return CupertinoApp(
         title: 'Performance Test',
-        // theme: ThemeData.dark(),
+        theme: CupertinoThemeData(
+          barBackgroundColor: Colors.blueGrey[100],
+        ),
         home: MainView());
   }
 }
@@ -32,8 +34,11 @@ class MyTableView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: 200,
-      padding: EdgeInsets.only(top: 100,left: 15, right: 15),
-      itemBuilder: (BuildContext context, int index) {
+      padding: EdgeInsets.only(top: 15,left: 15, right: 15),
+      itemBuilder: buildItem
+    );
+  }
+  Widget buildItem (BuildContext context, int index) {
         if (index.isOdd)
           return Container(
             height: 15,
@@ -118,7 +123,5 @@ class MyTableView extends StatelessWidget {
                     spreadRadius: 2)
               ]),
         );
-      },
-    );
-  }
+      }
 }
